@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0245ea8c946c5c3b9951ccf1d24661f6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0245ea8c946c5c3b9951ccf1d24661f6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0245ea8c946c5c3b9951ccf1d24661f6 = L.map(
+                "map_0245ea8c946c5c3b9951ccf1d24661f6",
+                {
+                    center: [53.3574, -6.4481],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_02eedb9020d4a195dea8f192d9bf4ef2 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_02eedb9020d4a195dea8f192d9bf4ef2.addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var marker_d5248a3a529b5c0fc3e5a9c29cf07fb3 = L.marker(
+                [53.3491242, -6.455356],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_ea3b360d0775bc0c0f1a4057895a9477 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d5248a3a529b5c0fc3e5a9c29cf07fb3.setIcon(icon_ea3b360d0775bc0c0f1a4057895a9477);
+        
+    
+        var popup_a8e9713e55308bceeabe809938624f05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8137f8fb658b82027e22292775dbf8dc = $(`<div id="html_8137f8fb658b82027e22292775dbf8dc" style="width: 100.0%; height: 100.0%;">The Lord Lucan Bar - Посещений: 2</div>`)[0];
+                popup_a8e9713e55308bceeabe809938624f05.setContent(html_8137f8fb658b82027e22292775dbf8dc);
+            
+        
+
+        marker_d5248a3a529b5c0fc3e5a9c29cf07fb3.bindPopup(popup_a8e9713e55308bceeabe809938624f05)
+        ;
+
+        
+    
+    
+            var marker_e533be9f16f6a3df95e7a2a7e68069e2 = L.marker(
+                [53.339557, -6.4839188],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_521c6c3869548b78ad93df951547ef2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e533be9f16f6a3df95e7a2a7e68069e2.setIcon(icon_521c6c3869548b78ad93df951547ef2d);
+        
+    
+        var popup_4ecab3051adc9ac4f6b168d82d120ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2581340e16b3f98572256e9f9fcf1978 = $(`<div id="html_2581340e16b3f98572256e9f9fcf1978" style="width: 100.0%; height: 100.0%;">Jim’s Bar - Посещений: 0</div>`)[0];
+                popup_4ecab3051adc9ac4f6b168d82d120ea6.setContent(html_2581340e16b3f98572256e9f9fcf1978);
+            
+        
+
+        marker_e533be9f16f6a3df95e7a2a7e68069e2.bindPopup(popup_4ecab3051adc9ac4f6b168d82d120ea6)
+        ;
+
+        
+    
+    
+            var marker_47fdc3658140ec3bdb7bb6cb957cf9ac = L.marker(
+                [53.3494989, -6.43923],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_4c2929138be755c017382c06991b863b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47fdc3658140ec3bdb7bb6cb957cf9ac.setIcon(icon_4c2929138be755c017382c06991b863b);
+        
+    
+        var popup_71ef51b1aa272c57632efab30ddbd950 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd373029fc9059bc8638a2e40c144b02 = $(`<div id="html_dd373029fc9059bc8638a2e40c144b02" style="width: 100.0%; height: 100.0%;">Pennyhill Pub - Посещений: 0</div>`)[0];
+                popup_71ef51b1aa272c57632efab30ddbd950.setContent(html_dd373029fc9059bc8638a2e40c144b02);
+            
+        
+
+        marker_47fdc3658140ec3bdb7bb6cb957cf9ac.bindPopup(popup_71ef51b1aa272c57632efab30ddbd950)
+        ;
+
+        
+    
+    
+            var marker_006ffb8187c5c1650abdbf3acbf10636 = L.marker(
+                [53.3494989, -6.43923],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_ac49bbe4318cdf52acb64e425b6710a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_006ffb8187c5c1650abdbf3acbf10636.setIcon(icon_ac49bbe4318cdf52acb64e425b6710a6);
+        
+    
+        var popup_f736e13605d4184fc074d8ff952d439a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0dc8e7b7bb82f8d93e677fa6ecef624f = $(`<div id="html_0dc8e7b7bb82f8d93e677fa6ecef624f" style="width: 100.0%; height: 100.0%;">Regal Fare - Посещений: 0</div>`)[0];
+                popup_f736e13605d4184fc074d8ff952d439a.setContent(html_0dc8e7b7bb82f8d93e677fa6ecef624f);
+            
+        
+
+        marker_006ffb8187c5c1650abdbf3acbf10636.bindPopup(popup_f736e13605d4184fc074d8ff952d439a)
+        ;
+
+        
+    
+    
+            var marker_c8c7960197fc125ffb025788ebec20f8 = L.marker(
+                [53.3534174, -6.4741451],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_4db3b195d5c53a2ae1160cb54738153e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8c7960197fc125ffb025788ebec20f8.setIcon(icon_4db3b195d5c53a2ae1160cb54738153e);
+        
+    
+        var popup_d6052e58f7f55f07c6f0742f6744581f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8e572d993047c0ed7866b36a138e036 = $(`<div id="html_f8e572d993047c0ed7866b36a138e036" style="width: 100.0%; height: 100.0%;">Clubhouse Restaurant Bar - Посещений: 0</div>`)[0];
+                popup_d6052e58f7f55f07c6f0742f6744581f.setContent(html_f8e572d993047c0ed7866b36a138e036);
+            
+        
+
+        marker_c8c7960197fc125ffb025788ebec20f8.bindPopup(popup_d6052e58f7f55f07c6f0742f6744581f)
+        ;
+
+        
+    
+    
+            var marker_dcbe00b0e4dae1f2739c5a5e3a850d08 = L.marker(
+                [53.3534174, -6.4741451],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_861d2dd86357b1dfce2799cd517964bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dcbe00b0e4dae1f2739c5a5e3a850d08.setIcon(icon_861d2dd86357b1dfce2799cd517964bd);
+        
+    
+        var popup_1d03edf7216f8f6fa46cba8c0e762132 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6c8a467a27939f547abade52a98e01e = $(`<div id="html_b6c8a467a27939f547abade52a98e01e" style="width: 100.0%; height: 100.0%;">The Lucan County Bar - Посещений: 0</div>`)[0];
+                popup_1d03edf7216f8f6fa46cba8c0e762132.setContent(html_b6c8a467a27939f547abade52a98e01e);
+            
+        
+
+        marker_dcbe00b0e4dae1f2739c5a5e3a850d08.bindPopup(popup_1d03edf7216f8f6fa46cba8c0e762132)
+        ;
+
+        
+    
+    
+            var marker_78898238fedfc81cd9e8edfd666cb88d = L.marker(
+                [53.3534174, -6.4741451],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_e3a5cf3be7bbc886cae16b3aa3e8cf9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78898238fedfc81cd9e8edfd666cb88d.setIcon(icon_e3a5cf3be7bbc886cae16b3aa3e8cf9f);
+        
+    
+        var popup_0bc612727f7d32df006f4c4d96f751a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f4e62675abf2b439d44b0206b64bbd = $(`<div id="html_53f4e62675abf2b439d44b0206b64bbd" style="width: 100.0%; height: 100.0%;">The Ballyneety Bar - Посещений: 0</div>`)[0];
+                popup_0bc612727f7d32df006f4c4d96f751a8.setContent(html_53f4e62675abf2b439d44b0206b64bbd);
+            
+        
+
+        marker_78898238fedfc81cd9e8edfd666cb88d.bindPopup(popup_0bc612727f7d32df006f4c4d96f751a8)
+        ;
+
+        
+    
+    
+            var marker_e0dff38d5c71bbdbc0d15f41d24bccf4 = L.marker(
+                [53.3456874, -6.4741451],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_098284c639625ed6ba88b474a6e642a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0dff38d5c71bbdbc0d15f41d24bccf4.setIcon(icon_098284c639625ed6ba88b474a6e642a6);
+        
+    
+        var popup_3b59118219feb8436ef2fab3cbf09eb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ca44c8b0af1ff5cad6628c9c0e5b728 = $(`<div id="html_7ca44c8b0af1ff5cad6628c9c0e5b728" style="width: 100.0%; height: 100.0%;">Annadale Cottage - Посещений: 0</div>`)[0];
+                popup_3b59118219feb8436ef2fab3cbf09eb8.setContent(html_7ca44c8b0af1ff5cad6628c9c0e5b728);
+            
+        
+
+        marker_e0dff38d5c71bbdbc0d15f41d24bccf4.bindPopup(popup_3b59118219feb8436ef2fab3cbf09eb8)
+        ;
+
+        
+    
+    
+            var marker_ef70c35a31286f6a413ecd55a1270271 = L.marker(
+                [53.3494347, -6.4686843],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_ecf6bbc5983a55ac31438b1da35c3376 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef70c35a31286f6a413ecd55a1270271.setIcon(icon_ecf6bbc5983a55ac31438b1da35c3376);
+        
+    
+        var popup_51c7e905ba5bc6fd9598754e324e93a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87a34df97ac5efc3d64e4656231b94e7 = $(`<div id="html_87a34df97ac5efc3d64e4656231b94e7" style="width: 100.0%; height: 100.0%;">The Ball Alley House - Посещений: 0</div>`)[0];
+                popup_51c7e905ba5bc6fd9598754e324e93a8.setContent(html_87a34df97ac5efc3d64e4656231b94e7);
+            
+        
+
+        marker_ef70c35a31286f6a413ecd55a1270271.bindPopup(popup_51c7e905ba5bc6fd9598754e324e93a8)
+        ;
+
+        
+    
+    
+            var marker_3aebd1a1d91f65c06f637fb4bba24c77 = L.marker(
+                [53.35556, -6.4561593],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_79b93351f5a28a55ca17fd4d4903c2fa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3aebd1a1d91f65c06f637fb4bba24c77.setIcon(icon_79b93351f5a28a55ca17fd4d4903c2fa);
+        
+    
+        var popup_ca53ad156922d03403c443a943172e08 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77c943d4b859c8659a9e9e263a8cb150 = $(`<div id="html_77c943d4b859c8659a9e9e263a8cb150" style="width: 100.0%; height: 100.0%;">Reeds on the River - Посещений: 0</div>`)[0];
+                popup_ca53ad156922d03403c443a943172e08.setContent(html_77c943d4b859c8659a9e9e263a8cb150);
+            
+        
+
+        marker_3aebd1a1d91f65c06f637fb4bba24c77.bindPopup(popup_ca53ad156922d03403c443a943172e08)
+        ;
+
+        
+    
+    
+            var marker_2173a521814dc0abf55d94f09b13e2d6 = L.marker(
+                [53.35556, -6.4561593],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_687bf3668f4ca0ca80bd652af6bc688d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2173a521814dc0abf55d94f09b13e2d6.setIcon(icon_687bf3668f4ca0ca80bd652af6bc688d);
+        
+    
+        var popup_cba33161492f29b6b6d0d8f1c671858e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57473a1e941cba37cdbbeb4977504826 = $(`<div id="html_57473a1e941cba37cdbbeb4977504826" style="width: 100.0%; height: 100.0%;">Courtney's of Lucan - Посещений: 0</div>`)[0];
+                popup_cba33161492f29b6b6d0d8f1c671858e.setContent(html_57473a1e941cba37cdbbeb4977504826);
+            
+        
+
+        marker_2173a521814dc0abf55d94f09b13e2d6.bindPopup(popup_cba33161492f29b6b6d0d8f1c671858e)
+        ;
+
+        
+    
+    
+            var marker_e69b0a46c6c7466beaecf80b98a96e7d = L.marker(
+                [53.3570439, -6.4508243],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_ffbe5acfe2fd4f8823907e9e65493d37 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e69b0a46c6c7466beaecf80b98a96e7d.setIcon(icon_ffbe5acfe2fd4f8823907e9e65493d37);
+        
+    
+        var popup_f187f397d120c3daef1d2ff7d0054072 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca255cd14de32eb3b1446d0f75c909e0 = $(`<div id="html_ca255cd14de32eb3b1446d0f75c909e0" style="width: 100.0%; height: 100.0%;">O'Neill Sons - Посещений: 0</div>`)[0];
+                popup_f187f397d120c3daef1d2ff7d0054072.setContent(html_ca255cd14de32eb3b1446d0f75c909e0);
+            
+        
+
+        marker_e69b0a46c6c7466beaecf80b98a96e7d.bindPopup(popup_f187f397d120c3daef1d2ff7d0054072)
+        ;
+
+        
+    
+    
+            var marker_ebe600301f0414d2463917a75248b0fb = L.marker(
+                [53.3570439, -6.4508243],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_cf56c5ce18a28291a6128bc09d7fa7dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ebe600301f0414d2463917a75248b0fb.setIcon(icon_cf56c5ce18a28291a6128bc09d7fa7dc);
+        
+    
+        var popup_75a62a2d5b8ddc48c081ecef0858128e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b78721d7a2ecd4d6b7c77126818238ed = $(`<div id="html_b78721d7a2ecd4d6b7c77126818238ed" style="width: 100.0%; height: 100.0%;">Kennys of Lucan - Посещений: 0</div>`)[0];
+                popup_75a62a2d5b8ddc48c081ecef0858128e.setContent(html_b78721d7a2ecd4d6b7c77126818238ed);
+            
+        
+
+        marker_ebe600301f0414d2463917a75248b0fb.bindPopup(popup_75a62a2d5b8ddc48c081ecef0858128e)
+        ;
+
+        
+    
+    
+            var marker_612b8261a2aefc084734108a135cf785 = L.marker(
+                [53.3566319, -6.4521219],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_6127065d7fce112a5148a395b1de1669 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_612b8261a2aefc084734108a135cf785.setIcon(icon_6127065d7fce112a5148a395b1de1669);
+        
+    
+        var popup_fcad724b29ed80d941af0066b14af989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d207be2288350e1c3926912a5eebf61c = $(`<div id="html_d207be2288350e1c3926912a5eebf61c" style="width: 100.0%; height: 100.0%;">Carrolls Gastro Pub - Посещений: 0</div>`)[0];
+                popup_fcad724b29ed80d941af0066b14af989.setContent(html_d207be2288350e1c3926912a5eebf61c);
+            
+        
+
+        marker_612b8261a2aefc084734108a135cf785.bindPopup(popup_fcad724b29ed80d941af0066b14af989)
+        ;
+
+        
+    
+    
+            var marker_713b004292f06ef2a60cc86d311b7730 = L.marker(
+                [53.3571273, -6.4508243],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_c77405d853aecc41a16c775b0203ea53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_713b004292f06ef2a60cc86d311b7730.setIcon(icon_c77405d853aecc41a16c775b0203ea53);
+        
+    
+        var popup_421591370592897609e55aca4b2128d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_364f98a54675ea765d759b410e84c017 = $(`<div id="html_364f98a54675ea765d759b410e84c017" style="width: 100.0%; height: 100.0%;">Residence Bar - Посещений: 0</div>`)[0];
+                popup_421591370592897609e55aca4b2128d8.setContent(html_364f98a54675ea765d759b410e84c017);
+            
+        
+
+        marker_713b004292f06ef2a60cc86d311b7730.bindPopup(popup_421591370592897609e55aca4b2128d8)
+        ;
+
+        
+    
+    
+            var marker_48924aaa8d497197601ecbcd4e2f81b9 = L.marker(
+                [53.3493748, -6.454233],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_ca2e3ebc24c4aeba1feb92b07bb2a0d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_48924aaa8d497197601ecbcd4e2f81b9.setIcon(icon_ca2e3ebc24c4aeba1feb92b07bb2a0d4);
+        
+    
+        var popup_032d7a2c1d750e5fb7f4b5a7a4af2905 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75991721c34ac89ff3b03d6498f04364 = $(`<div id="html_75991721c34ac89ff3b03d6498f04364" style="width: 100.0%; height: 100.0%;">The Foxhunter - Посещений: 0</div>`)[0];
+                popup_032d7a2c1d750e5fb7f4b5a7a4af2905.setContent(html_75991721c34ac89ff3b03d6498f04364);
+            
+        
+
+        marker_48924aaa8d497197601ecbcd4e2f81b9.bindPopup(popup_032d7a2c1d750e5fb7f4b5a7a4af2905)
+        ;
+
+        
+    
+    
+            var marker_c955141c7cb56073f78b52cf36d921d3 = L.marker(
+                [53.3493748, -6.454233],
+                {}
+            ).addTo(map_0245ea8c946c5c3b9951ccf1d24661f6);
+        
+    
+            var icon_04f07791baa08cb0ef9f2a3ba6a1baed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c955141c7cb56073f78b52cf36d921d3.setIcon(icon_04f07791baa08cb0ef9f2a3ba6a1baed);
+        
+    
+        var popup_5a4178e993bc4e811990c2f54587f790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_33cbbf4414901b99fbeba15c3e4e8e2a = $(`<div id="html_33cbbf4414901b99fbeba15c3e4e8e2a" style="width: 100.0%; height: 100.0%;">The Deadman’s Inn - Посещений: 0</div>`)[0];
+                popup_5a4178e993bc4e811990c2f54587f790.setContent(html_33cbbf4414901b99fbeba15c3e4e8e2a);
+            
+        
+
+        marker_c955141c7cb56073f78b52cf36d921d3.bindPopup(popup_5a4178e993bc4e811990c2f54587f790)
+        ;
+
+        
+    
+</script>
+</html>
